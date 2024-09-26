@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter-App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="w-screen h-screen flex justify-center items-center bg-black flex flex-col gap-10"
+    >
+      <div class="text-3xl text-white font-serif">Counter App</div>
+      <div class="flex">
+        <div class="px-4">
+          <button onclick="decrement()" class="bg-white rounded-sm h-20 w-20">
+            <i class="fa-solid fa-minus text-black text-[50px]"></i>
+          </button>
+        </div>
+        <div id="counter" class="px-4 bg-white text-3xl font-bold">
+          <button
+            class="text-black bg-white text-[50px] rounded-sm h-20 w-50 flex justify-center items-center"
+          >
+            0
+          </button>
+        </div>
+        <div class="px-4">
+          <button onclick="increment()" class="bg-white rounded-sm h-20 w-20">
+            <i class="fa-solid fa-plus text-black text-[50px]"></i>
+          </button>
+        </div>
+      </div>
+      <div class="text-white my-40">
+        <i
+          class="fa-solid fa-heart fa-flip-horizontal fa-sm"
+          style="color: #db1f3b"
+        ></i>
+        @Praveen Kumar
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/ba461f4e7f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
